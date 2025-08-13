@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Object Detection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #2d2d2d);
+      color: #fff;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar .logo {
+      font-size: 1.8rem;
+      color: #00ff88;
+      font-weight: bold;
+    }
+    .navbar ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #00ff88;
+    }
+
+    /* Article Container */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+    }
+
+    h1 {
+      color: #00ff88;
+      text-shadow: 0 0 10px #00ff88;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #00ff88;
+      margin-top: 40px;
+      font-size: 1.8rem;
+    }
+    p, li {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+    ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 50px;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 -5px 20px rgba(0, 255, 136, 0.2);
+    }
+    .footer h2 {
+      color: #00ff88;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      p { font-size: 1rem; }
+      .container { padding: 15px; }
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+      .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AI Vision</div>
+    <ul>
+      <li><a href="/index">Home</a></li>
+      <li><a href="/feature">feature</a></li>
+      <li><a href="/about">about</a></li>
+    </ul>
+  </nav>
+
+  <!-- Article -->
+  <div class="container">
+    <h1>Real-Time Object Detection: Bringing AI Vision to Life</h1>
+    <p>In today’s world, <strong>Artificial Intelligence (AI)</strong> is transforming the way we interact with technology. One of the most exciting applications of AI is <strong>Real-Time Object Detection</strong> — the ability of a computer to see, understand, and label objects as they appear in front of a camera.</p>
+
+    <h2>What is Real-Time Object Detection?</h2>
+    <p>Real-Time Object Detection uses <strong>computer vision</strong> and <strong>deep learning models</strong> to identify objects in a live video feed. Unlike traditional image processing, which works on static images, real-time detection can process frames on-the-fly, making it perfect for live applications.</p>
+
+    <h2>How Does It Work?</h2>
+    <ul>
+      <li><strong>Camera Input</strong> – A webcam or CCTV captures live video.</li>
+      <li><strong>AI Model Processing</strong> – Models like <strong>SSD MobileNet</strong>, <strong>YOLO</strong>, or <strong>Faster R-CNN</strong> analyze each frame.</li>
+      <li><strong>Detection & Labeling</strong> – The AI detects objects (like people, cars, animals) and labels them with bounding boxes and confidence scores.</li>
+      <li><strong>Instant Output</strong> – Results are displayed instantly, often in less than a second.</li>
+    </ul>
+
+    <h2>Why Is It Important?</h2>
+    <p>Real-time object detection has endless possibilities:</p>
+    <ul>
+      <li><strong>Security & Surveillance</strong> – Detecting unusual activities or intrusions.</li>
+      <li><strong>Autonomous Vehicles</strong> – Helping self-driving cars “see” the road.</li>
+      <li><strong>Retail & Inventory</strong> – Counting products and analyzing customer behavior.</li>
+      <li><strong>Assistive Technology</strong> – Helping visually impaired people understand their surroundings.</li>
+    </ul>
+
+    <h2>The Future of AI Vision</h2>
+    <p>As AI models become <strong>faster</strong> and <strong>more accurate</strong>, real-time object detection will become an essential part of everyday life. From <strong>smart homes</strong> to <strong>industrial automation</strong>, this technology will keep evolving, making our world safer, smarter, and more connected.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h2>AI Vision</h2>
+    <p>Empowering the future with AI and real-time object detection.</p>
+    <p>© 2025 AI Vision. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

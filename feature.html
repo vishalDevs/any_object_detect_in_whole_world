@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - AI Object Detection</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #2d2d2d);
+            color: #fff;
+        }
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+        }
+        .navbar .logo {
+            font-size: 1.8rem;
+            color: #00ff88;
+            font-weight: bold;
+        }
+        .navbar ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #00ff88;
+        }
+        /* Features Section */
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .features h1 {
+            font-size: 2.5rem;
+            color: #00ff88;
+            margin-bottom: 40px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-card h2 {
+            font-size: 1.5rem;
+            color: #00ff88;
+            margin-bottom: 15px;
+        }
+        .feature-card p {
+            color: #ccc;
+            font-size: 1rem;
+        }
+        /* Responsive Fix */
+        @media (max-width: 768px) {
+            .features h1 {
+                font-size: 2rem;
+            }
+            .feature-card h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+
+        /* Footer */
+    .footer {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 50px;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 -5px 20px rgba(0, 255, 136, 0.2);
+    }
+    .footer h2 {
+      color: #00ff88;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      p { font-size: 1rem; }
+      .container { padding: 15px; }
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+      .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">AI Vision</div>
+        <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/features">Features</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h1>Features of Our Object Detection System</h1>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h2>🎥 Real-Time Detection</h2>
+                <p>Instantly detects objects from a live webcam feed with high accuracy using deep learning models like SSD MobileNet.</p>
+            </div>
+            <div class="feature-card">
+                <h2>🚗 Multi-Object Recognition</h2>
+                <p>Identify multiple objects at once — people, vehicles, animals, and more — with bounding boxes and confidence levels.</p>
+            </div>
+            <div class="feature-card">
+                <h2>⚡ Fast & Lightweight</h2>
+                <p>Optimized for real-time processing, making it suitable for low-latency applications like surveillance and robotics.</p>
+            </div>
+            <div class="feature-card">
+                <h2>📊 AI-Powered Analytics</h2>
+                <p>Generate insights for applications like retail analytics, security systems, and smart city monitoring.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+  <footer class="footer">
+    <h2>AI Vision</h2>
+    <p>Empowering the future with AI and real-time object detection.</p>
+    <p>© 2025 AI Vision. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
